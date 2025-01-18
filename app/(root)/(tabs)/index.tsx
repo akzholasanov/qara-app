@@ -1,11 +1,9 @@
 import { useState } from 'react';
-import { ScrollView, View } from 'react-native';
+import { ScrollView, Text, View } from 'react-native';
 
-import { useCalendar } from '../../../hooks/use-calendar.hook';
-import { DayLabel } from '../../../components/day-label/day-label.component';
-import { DateLabel } from '../../../components/date-label/date-label.component';
-import { Week } from '../../../components/week/week.component';
-import { Task } from '../../../components/task/task.component';
+import { useCalendar } from '@/hooks';
+import { Task, DayLabel, DateLabel, Week } from '@/components';
+
 
 export default function Index() {
   const [tasks, setTasks] = useState([
@@ -44,13 +42,20 @@ export default function Index() {
       <ScrollView
         className='flex-1 w-full h-[calc(100%-100px)] pb-20'
         contentContainerStyle={{
+          flexGrow: 1,
+          justifyContent: tasks.length === 0 ? 'center' : undefined,
+          alignItems: tasks.length === 0 ? 'center' : undefined,
           paddingBottom: 85,
         }}
         showsVerticalScrollIndicator={false}
       >
-        {tasks.map(task => (
-          <Task task={task} key={task.id} toggleTask={toggleTask} />
-        ))}
+        {tasks.length > 0 &&
+          tasks.map(task => (
+            <Task task={task} key={task.id} toggleTask={toggleTask} />
+          ))}
+        {tasks.length === 0 && (
+          <Text className='text-xl font-semibold text-gray-400'>No tasks</Text>
+        )}
       </ScrollView>
     </View>
   );

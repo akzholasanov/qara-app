@@ -15,7 +15,7 @@ export const Task = ({ task, toggleTask }: TaskProps) => {
       <Checkbox
         value={task.completed}
         onValueChange={() => toggleTask(task.id)}
-        color={task.completed ? '#0061FF' : undefined}
+        color={task.completed ? '#000000' : undefined}
       />
       <View className='flex-1 flex-row items-center justify-between w-full'>
         <Text
