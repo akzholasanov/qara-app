@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { Dimensions, Pressable, View } from 'react-native';
+import { Dimensions, View } from 'react-native';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Entypo from '@expo/vector-icons/Entypo';
