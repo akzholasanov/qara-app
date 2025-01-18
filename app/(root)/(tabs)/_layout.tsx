@@ -1,8 +1,8 @@
 import { Tabs } from 'expo-router';
 import { Dimensions, View } from 'react-native';
 import AntDesign from '@expo/vector-icons/AntDesign';
-import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
 import Entypo from '@expo/vector-icons/Entypo';
+import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 
 export default function TabsLayout() {
   const screenWidth = Dimensions.get('window').width;
@@ -13,7 +13,7 @@ export default function TabsLayout() {
         tabBarShowLabel: false,
         tabBarStyle: {
           position: 'absolute',
-          bottom: 45,
+          bottom: 40,
           left: 24,
           marginHorizontal: (screenWidth - 200) / 2,
           width: 200,
@@ -53,15 +53,15 @@ export default function TabsLayout() {
         }}
       />
       <Tabs.Screen
-        name='new-task'
+        name='tasks'
         options={{
-          title: 'New Task',
+          title: 'Tasks',
           headerShown: false,
           tabBarIcon: ({ focused }) => (
             <View>
-              <FontAwesome6
-                name='plus'
-                size={26}
+              <FontAwesome5
+                name='tasks'
+                size={24}
                 color={focused ? '#141414' : '#A0AEC0'}
               />
             </View>
