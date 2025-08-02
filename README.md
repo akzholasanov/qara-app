@@ -1,50 +1,62 @@
-# Welcome to your Expo app 👋
+# Qara App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Qara App** is a mobile application designed to help users manage their daily tasks, notes, and calendar events efficiently. Built with modern technologies like **React Native**, **Expo**, **NativeWind**, and **TypeScript**, Qara provides a seamless and intuitive experience for organizing your schedule and ideas.
 
-## Get started
+---
 
-1. Install dependencies
+## 📚 Table of Contents
 
-   ```bash
-   npm install
-   ```
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
 
-2. Start the app
+---
 
-   ```bash
-    npx expo start
-   ```
+## ✨ Features
 
-In the output, you'll find options to open the app in a
+- **📅 Calendar**: View and manage your schedule with a user-friendly calendar interface.
+- **📝 Notes**: Create, edit, and organize notes for ideas, reminders, or important information.
+- **✅ Daily Tasks**: Assign tasks to specific days, track progress, and stay productive.
+- **📱 Cross-Platform**: Available on both iOS and Android, built with React Native and Expo.
+- **🔐 Type-Safe**: Ensures robust code with TypeScript for better development experience.
+- **💡 Responsive Design**: Styled with NativeWind for consistent and adaptive UI across devices.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🛠 Tech Stack
 
-## Get a fresh project
+- **React Native**: Framework for building cross-platform mobile applications.
+- **Expo**: Simplifies development, testing, and deployment of React Native apps.
+- **NativeWind**: Tailwind CSS-inspired styling for React Native components.
+- **TypeScript**: Adds static types to JavaScript for improved code reliability.
 
-When you're ready, run:
+---
+
+## 🚀 Installation
+
+Follow these steps to set up the project locally:
+
+### 1. Clone the Repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/akzholasanov/qara-app.git
+cd qara-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Install Dependencies
 
-## Learn more
+Make sure you have Node.js and Expo CLI installed. Then run:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npm install
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### 4. Run the Application
 
-## Join the community
+Start the Expo development server:
 
-Join our community of developers creating universal apps.
+```bash
+npm start
+```
+Then use the Expo Go app on your iOS/Android device or an emulator to preview the app.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
